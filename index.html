@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>github.com/io</title>
+    <title>사부작이 - 자취 생활 고수를 위한 필수 앱</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -29,6 +29,8 @@
             background-color: var(--bg-color);
             color: var(--text-main);
             line-height: 1.7;
+            /* 단어 단위로 줄바꿈 되도록 설정 (가독성 향상) */
+            word-break: keep-all;
         }
 
         header {
@@ -149,47 +151,7 @@
             font-size: 0.95rem;
             color: var(--text-muted);
             line-height: 1.6;
-        }
-
-        .image-showcase {
-            margin-top: 30px;
-            background: linear-gradient(135deg, #f3effc 0%, #faf7ff 100%);
-            border: 2px solid var(--accent-purple);
-            border-radius: 12px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 4px 16px rgba(181, 138, 230, 0.1);
-        }
-
-        .image-showcase img {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 8px 24px rgba(155, 111, 184, 0.2);
-            margin-bottom: 20px;
-        }
-
-        .image-showcase h4 {
-            color: var(--primary-dark);
-            font-size: 1.25rem;
-            margin-bottom: 10px;
-        }
-
-        .image-showcase p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            line-height: 1.6;
-            text-align: left;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            border-top: 1px solid var(--border-color);
-            margin-top: 40px;
+            margin-bottom: 0; /* 그리드 안에서 불필요한 여백 제거 */
         }
 
         @media (max-width: 768px) {
@@ -215,54 +177,46 @@
 
     <header>
         <h1>자취 생활 고수를 위한 필수 앱</h1>
-         <p>사부작이</p>
+        <p>사부작이</p>
     </header>
 
     <div class="container">
-        <!-- 소개-->
-       <div class="card">
-  	<h2>소개</h2>
-  <p class="description">
-    동구 핫플 & 공방추천<br>
-    신규 & 소모임<br>
-    취업 정보<br>
-    홍보와 협찬<br>
-    
-  </p>
-  
-  <!-- 이미지 틀 -->
-  <div class="image-container" style="margin-top: 20px; width: 100%; overflow: hidden; border-radius: 12px;">
-    <img src="사부작 자취 소개.png" alt="사부작 사용 방법" style="width: 100%; height: auto; display: block; object-fit: cover;">
-  </div>
-</div>
+        <!-- 소개 영역 -->
+        <div class="card">
+            <h2>소개</h2>
+            <p class="description">
+                동구 핫플 & 공방 추천<br>
+                신규 & 소모임<br>
+                취업 정보<br>
+                홍보와 협찬
+            </p>
             <div class="highlight-box">
-            
+                <!-- 하이라이트 박스 내용이 비어있어 임의의 예시 문구를 추가했습니다. 필요시 삭제하거나 변경하세요. -->
+                대전 청년들의 성공적인 자립을 응원합니다!
             </div>
         </div>
 
-        <!-- 차별점 -->
+        <!-- 차별점 영역 -->
         <div class="card">
             <h2>사부작을 다운로드하면 좋은 이유</h2>
             <div class="grid">
                 <div class="grid-item">
-                    <h3>첫화면</h3>
-                    <p>원데이 클래스,청년공간,네트워크,핫플레이스를 포스터를 소개합니다.</p>
+                    <h3>첫 화면</h3>
+                    <p>원데이 클래스, 청년공간, 네트워크, 핫플레이스 관련 포스터를 소개합니다.</p>
                 </div>
                 <div class="grid-item">
                     <h3>자취 생활 팁</h3>
-  <p>
-    대전으로 이주한 보호종료 자립준비 청소년<br>
-    1인 가구 청년의 성공적인 자아실현과 청년 정책
-  </p>
-</div>구현</p>
+                    <!-- 오타 제거 및 문장 자연스럽게 수정 -->
+                    <p>대전으로 이주한 자립준비 청년과 1인 가구 청년의 성공적인 자아실현을 돕는 청년 정책을 안내합니다.</p>
                 </div>
                 <div class="grid-item">
-                    <h3> 웰컴 키트</h3>
-                    <p>대전으로 거주지 옮긴 보호 연장 청소년, 1인 가구 청년을 위한 자취 키트(수건, 가글, 충전기, 독서대 등)를 제공합니다.</p>
+                    <h3>웰컴 키트</h3>
+                    <!-- 용어 통일 및 가독성 향상 -->
+                    <p>대전으로 거주지를 옮긴 자립준비 청년 및 1인 가구 청년을 위한 자취 키트(수건, 가글, 충전기, 독서대 등)를 제공합니다.</p>
                 </div>
             </div>
         </div>
-
+    </div>
         <!-- 제작 기획 -->
         <div class="card">
             <h2>제작</h2>
