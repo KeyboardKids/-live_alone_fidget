@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>사부작이 - 자취 생활 고수를 위한 필수 앱</title>
+    <title>github.com/io</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -29,7 +29,6 @@
             background-color: var(--bg-color);
             color: var(--text-main);
             line-height: 1.7;
-            /* 단어 단위로 줄바꿈 되도록 설정 (가독성 향상) */
             word-break: keep-all;
         }
 
@@ -151,7 +150,52 @@
             font-size: 0.95rem;
             color: var(--text-muted);
             line-height: 1.6;
-            margin-bottom: 0; /* 그리드 안에서 불필요한 여백 제거 */
+            margin-bottom: 0;
+        }
+
+        .image-showcase {
+            margin-top: 30px;
+            background: linear-gradient(135deg, #f3effc 0%, #faf7ff 100%);
+            border: 2px solid var(--accent-purple);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(181, 138, 230, 0.1);
+        }
+
+        /* 이미지 크기가 박스를 벗어나지 않도록 제어하는 스타일 */
+        .image-showcase img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 8px 24px rgba(155, 111, 184, 0.2);
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .image-showcase h4 {
+            color: var(--primary-dark);
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .image-showcase p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            text-align: left;
+            margin-bottom: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
         }
 
         @media (max-width: 768px) {
@@ -191,7 +235,6 @@
                 홍보와 협찬
             </p>
             <div class="highlight-box">
-                <!-- 하이라이트 박스 내용이 비어있어 임의의 예시 문구를 추가했습니다. 필요시 삭제하거나 변경하세요. -->
                 대전 청년들의 성공적인 자립을 응원합니다!
             </div>
         </div>
@@ -206,36 +249,34 @@
                 </div>
                 <div class="grid-item">
                     <h3>자취 생활 팁</h3>
-                    <!-- 오타 제거 및 문장 자연스럽게 수정 -->
                     <p>대전으로 이주한 자립준비 청년과 1인 가구 청년의 성공적인 자아실현을 돕는 청년 정책을 안내합니다.</p>
                 </div>
                 <div class="grid-item">
                     <h3>웰컴 키트</h3>
-                    <!-- 용어 통일 및 가독성 향상 -->
                     <p>대전으로 거주지를 옮긴 자립준비 청년 및 1인 가구 청년을 위한 자취 키트(수건, 가글, 충전기, 독서대 등)를 제공합니다.</p>
                 </div>
             </div>
         </div>
-    </div>
-        <!-- 제작 기획-->
-<div class="card">
-    <h2>제작</h2>
-    <ul>
-        <li><strong>1단계 (디자인 및 도안):</strong> 생활 속 캐릭터 제작 및 웰컴 키트 도안 기획</li>
-        <li><strong>2단계 (인프라 활용):</strong> 대전 동구 인쇄거리 및 지역 업체와 연계한 굿즈·카드 제작</li>
-        <li><strong>3단계 (샘플링 및 검증):</strong> 지역 공방·철공소 협력 샘플 제작 및 청년 소비 대상 피드백 수렴</li>
-    </ul>
 
-    <div class="image-showcase">
-        <!-- 이미지 크기를 제어하는 style 속성을 추가했습니다 -->
-        <img src="sample.png" alt="사부작 자취 캐릭터 키트" style="max-width: 100%; height: auto; border-radius: 8px;">
-        <h4>사부작 자취 캐릭터 굿즈 및 패키지 시제품</h4>
-        <p>로봇 드립백 커피, 보라색 너트 쿠키로 구성된 샘플입니다.</p>
+        <!-- 제작 영역 및 이미지 -->
+        <div class="card">
+            <h2>제작</h2>
+            <ul>
+                <li><strong>1단계 (디자인 및 도안):</strong> 생활 속 캐릭터 제작 및 웰컴 키트 도안 기획</li>
+                <li><strong>2단계 (인프라 활용):</strong> 대전 동구 인쇄거리 및 지역 업체와 연계한 굿즈·카드 제작</li>
+                <li><strong>3단계 (샘플링 및 검증):</strong> 지역 공방·철공소 협력 샘플 제작 및 청년 소비 대상 피드백 수렴</li>
+            </ul>
+
+            <div class="image-showcase">
+                <img src="sample.png" alt="사부작 자취 캐릭터 키트">
+                <h4>사부작 자취 캐릭터 굿즈 및 패키지 시제품</h4>
+                <p>로봇 드립백 커피, 보라색 너트 쿠키로 구성된 샘플입니다.</p>
+            </div>
+        </div>
     </div>
-</div>
 
     <footer>
-        <p>자취 프로젝트 </p>
+        <p>자취 프로젝트</p>
     </footer>
 
 </body>
