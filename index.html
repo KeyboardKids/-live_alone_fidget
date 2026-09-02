@@ -159,7 +159,7 @@
             font-weight: bold;
         }
 
-        /* 3. Roadmap Section (NEW) */
+        /* 3. Roadmap Section */
         .roadmap-section {
             margin-bottom: 50px;
         }
@@ -171,4 +171,288 @@
         }
 
         @media (max-width: 768px) {
-            .grid
+            .grid-3 { grid-template-columns: 1fr; }
+        }
+
+        .roadmap-card {
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+            position: relative;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .roadmap-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        }
+
+        .step-badge {
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-bottom: 12px;
+            background: #ede9fe;
+            color: #7c3aed;
+        }
+
+        .roadmap-card h4 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #1f2937;
+        }
+
+        .roadmap-card p {
+            font-size: 14px;
+            color: #4b5563;
+            background: #f9fafb;
+            padding: 12px;
+            border-radius: 8px;
+            line-height: 1.5;
+        }
+
+        /* 4. Business Model (Ecosystem) */
+        .bm-section {
+            margin-bottom: 50px;
+        }
+
+        .bm-card {
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .bm-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        }
+
+        .bm-tag {
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .tag-b2g { background: #e0f2fe; color: #0369a1; }
+        .tag-b2c { background: #fef3c7; color: #b45309; }
+        .tag-b2b { background: #f3e8ff; color: #6b21a8; }
+
+        .bm-card h4 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #1f2937;
+        }
+
+        .bm-card p {
+            font-size: 14px;
+            color: #6b7280;
+            text-align: left;
+            background: #f9fafb;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 8px;
+        }
+
+        /* 5. Financial Table */
+        .table-section {
+            margin-bottom: 50px;
+        }
+
+        .table-container {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid #e5e7eb;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 16px 20px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        th {
+            background-color: #f9fafb;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        td {
+            color: #4b5563;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .highlight-row {
+            background-color: #f5f3ff;
+            font-weight: 600;
+            color: #6d28d9;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #9ca3af;
+            font-size: 14px;
+            border-top: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <span class="badge">VISION</span>
+            <h1>지역의 감각과 인재를 기획해 주는 회사</h1>
+            <p class="subtitle">B2G - B2C - B2B를 유기적으로 연결하는 선순환 플랫폼 생태계</p>
+            
+            <div class="kpi-container">
+                <div class="kpi-card">
+                    <div class="kpi-title">3년차 목표 가입자</div>
+                    <div class="kpi-value">80,000 명</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-title">3년차 목표 매출액</div>
+                    <div class="kpi-value">16.0 억원</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-title">목표 영업이익률</div>
+                    <div class="kpi-value">22 %</div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h2 class="section-title">시장 문제점 및 자사 솔루션</h2>
+            <div class="grid-2">
+                <div class="card card-problem">
+                    <h3>기존 플랫폼의 한계</h3>
+                    <div class="list-item"><b>중고거래 플랫폼:</b> 무분별한 거래 및 약속 불이행(노쇼) 발생</div>
+                    <div class="list-item"><b>나눔 오용:</b> 무료 나눔의 취지를 악용하는 사례 빈번</div>
+                    <div class="list-item"><b>지역 알뜰마켓:</b> 확장성 한계 및 단발성 이벤트에 그침</div>
+                    <div class="list-item"><b>데이터 활용 미흡:</b> 지역 주민 활동 데이터의 비즈니스 연계 부족</div>
+                </div>
+
+                <div class="card card-solution">
+                    <h3>자사 서비스의 차별점</h3>
+                    <div class="list-item"><b>노쇼 방지 시스템:</b> 예약금 체계 및 정책 기반 제재</div>
+                    <div class="list-item"><b>안전 인증제:</b> 실명 기반 본인 인증 및 리워드 지급</div>
+                    <div class="list-item"><b>선순환 구조:</b> B2G 바우처 및 B2B 커리어 연계</div>
+                    <div class="list-item"><b>데이터 기반 추천:</b> 사용자 활동 데이터를 활용한 맞춤 추천</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3단계 로드맵 섹션 -->
+        <section class="roadmap-section">
+            <h2 class="section-title">플랫폼 전개 3단계 로드맵</h2>
+            <div class="grid-3">
+                <div class="roadmap-card">
+                    <span class="step-badge">STEP 01</span>
+                    <h4>디자인 및 도안</h4>
+                    <p>생활 속 캐릭터 제작 및 웰컴 키트 도안 기획을 통한 초기 브랜드 정체성 구축</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="step-badge">STEP 02</span>
+                    <h4>산업 인프라 연계</h4>
+                    <p>앱 내 동구 핫플 및 공방 광고 유치, 원데이 클래스 및 소모임 매칭 중개 활성화</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="step-badge">STEP 03</span>
+                    <h4>정책 공공 연계</h4>
+                    <p>대전 내 청년공간과 연계하여 오프라인 정책 지원망으로 자연스럽게 유입 유도</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bm-section">
+            <h2 class="section-title">비즈니스 모델 (BM 구조도)</h2>
+            <div class="grid-3">
+                <div class="bm-card">
+                    <span class="bm-tag tag-b2g">B2G (공공)</span>
+                    <h4>지자체 & 공공기관</h4>
+                    <p><b>역할:</b> 청년 지원 정책 및 예산 투입</p>
+                    <p><b>수익 모델:</b> 사업비 수주, 위탁 용역비, 공공 바우처 연계</p>
+                </div>
+                <div class="bm-card">
+                    <span class="bm-tag tag-b2c">B2C (사용자)</span>
+                    <h4>청년 & 지역 주민</h4>
+                    <p><b>역할:</b> 콘텐츠 탐색, 클래스 참여, 활동 데이터 축적</p>
+                    <p><b>수익 모델:</b> 유료 클래스 중개 수수료, 프리미엄 거래 수수료</p>
+                </div>
+                <div class="bm-card">
+                    <span class="bm-tag tag-b2b">B2B (기업)</span>
+                    <h4>지역 기업 & 스폰서</h4>
+                    <p><b>역할:</b> 우수 인재 채용, 지역 대상 마케팅</p>
+                    <p><b>수익 모델:</b> 인재 추천/채용 수수료, 타깃 광고 및 마케팅비</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <h2 class="section-title">3개년 추정 재무 및 성과 지표</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>1년차</th>
+                            <th>2년차</th>
+                            <th>3년차</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>가입자 수</b></td>
+                            <td>10,000 명</td>
+                            <td>30,000 명</td>
+                            <td><b>80,000 명</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>활성 콘텐츠 수</b></td>
+                            <td>300 개</td>
+                            <td>1,000 개</td>
+                            <td><b>2,000 개</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>매출액</b></td>
+                            <td>1.5 억 원</td>
+                            <td>6.5 억 원</td>
+                            <td><b>16.0 억 원</b></td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><b>영업이익 (이익률)</b></td>
+                            <td>-0.3 억 원 (-20%)</td>
+                            <td>1.2 억 원 (18%)</td>
+                            <td><b>3.5 억 원 (22%)</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <p>비즈니스 모델</p>
+        </footer>
+    </div>
+
+</body>
+</html>
